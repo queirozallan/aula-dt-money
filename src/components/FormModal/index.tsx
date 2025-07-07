@@ -6,6 +6,16 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 // Validação do formulário
 
+
+interface FormModalProps {
+  isOpen: boolean
+  onClose: () => void
+  defaultValues?: ITransaction | null
+}
+
+
+
+
 export interface IFormModalProps {
     formTitle: string;
     closeModal: () => void;
